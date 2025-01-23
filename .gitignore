@@ -1,6 +1,4 @@
-the ** is not working the node_modules inside server is not greyed out 
-
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+  # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 **/node_modules
