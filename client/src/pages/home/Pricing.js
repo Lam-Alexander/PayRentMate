@@ -4,12 +4,10 @@ import Header from "../../components/header/Header"
 const Pricing = () => {
     return (
         <>
-        <Header/>
-        <div className="pricing-card-container">
-        <PricingSection/>
-
-        </div>
-        
+            <Header/>
+            <div className="pricing-card-container">
+            <PricingSection/>
+            </div>
         </>
     )
 }

@@ -1,54 +1,45 @@
 .header-container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
-  /* position: relative; */
   gap: 1rem;
 }
 
 .sticky {
   position: fixed;
-  /* top: 0; */
   left: 0;
   right: 0;
-  margin: 1.5rem auto; 
-  max-width: 50%; 
-  /* transform: translateY(0);  */
+  margin: 1.5rem auto;
+  max-width: 50%;
   transition: all 500ms ease-in-out;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 40px; 
-  padding: 0.75rem 1rem; 
+  border-radius: 40px;
+  padding: 0.75rem 1rem;
   z-index: 1000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 5px 0 rgb(0 0 0 / 0.1), 0 5px 5px -1px rgb(0 0 0 / 0.1);
-  border: 0.5px solid gray; 
-  /* opacity: 1;  */
+  border: 0.5px solid gray;
 }
 
 .header-button-wrapper {
   display: flex;
-  /* justify-content: flex-end; */
   gap: 1rem;
 }
 
 .header-anchor-wrapper {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex: 1;
   gap: 2rem;
-  /* flex-wrap: wrap; */
+
 }
 
 .header-logo {
   width: 15rem;
-  /* height: auto; */
 }
 
 .header-container button {
-  /* display: flex; */
   cursor: pointer;
   border-radius: 4px;
   font-weight: 600;
@@ -67,7 +58,7 @@
   color: #f15b6e;
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid #f15b6e;
-  
+
 }
 
 .header-container button:hover {
@@ -77,10 +68,9 @@
 }
 
 .header-anchor-wrapper a {
-  /* font-size: 1rem;  */
-  font-family: 'Inter', 'Segoe UI', sans-serif;  
+  font-family: 'Inter', 'Segoe UI', sans-serif;
   font-weight: 600;
-  color: #333; 
+  color: #333;
   padding: 0.25rem 0.5rem;
   transition: color 0.3s ease, box-shadow 0.3s ease;
   border-radius: 4px;
@@ -89,27 +79,26 @@
 .header-anchor-wrapper a:hover {
   color: #f15b6e;
   box-shadow: 0 0 10px rgba(241, 91, 110, 0.3);
-  background-color: rgba(241, 91, 110, 0.1); 
+  background-color: rgba(241, 91, 110, 0.1);
 }
 
 .header-hamburger-menu {
   display: none;
 }
 
-
 /* MEDIA QUERY — MOBILE */
 @media (max-width: 768px) {
 
-  .header-container{
+  .header-container {
     flex-wrap: nowrap;
-    /* justify-content: space-around; */
     justify-content: space-between;
   }
+
   .header-hamburger-menu {
     display: inline;
   }
 
-  .header-anchor-wrapper{
+  .header-anchor-wrapper {
     display: none;
   }
 
@@ -117,27 +106,24 @@
     display: none;
   }
 
-  .header-logo{
+  .header-logo {
     width: 12rem;
-    
+
   }
 
   .sticky {
     max-width: 75%;
-    padding: 0.75rem 1rem; 
+    padding: 0.75rem 1rem;
 
   }
 
   .header-hamburger-menu {
-    /* display: none; */
-    /* font-size: 2rem; */
     background-color: #f15b6e;
     color: white;
     font-size: 1rem;
     width: 2rem;
     cursor: pointer;
-    border:none;
-    padding: 0.75rem 1rem; 
+    border: none;
+    padding: 0.75rem 1rem;
   }
-  
 }
