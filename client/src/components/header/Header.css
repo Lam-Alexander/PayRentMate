@@ -1,20 +1,20 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
-  position: relative;
+  /* position: relative; */
   gap: 1rem;
 }
 
 .sticky {
   position: fixed;
-  top: 0;
+  /* top: 0; */
   left: 0;
   right: 0;
   margin: 1.5rem auto; 
   max-width: 50%; 
-  transform: translateY(0); 
+  /* transform: translateY(0);  */
   transition: all 500ms ease-in-out;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.6);
@@ -24,30 +24,31 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 5px 0 rgb(0 0 0 / 0.1), 0 5px 5px -1px rgb(0 0 0 / 0.1);
   border: 0.5px solid gray; 
-  opacity: 1; 
+  /* opacity: 1;  */
 }
 
 .header-button-wrapper {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   gap: 1rem;
 }
 
 .header-anchor-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex: 1;
   gap: 2rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .header-logo {
   width: 15rem;
-  height: auto;
+  /* height: auto; */
 }
 
 .header-container button {
+  /* display: flex; */
   cursor: pointer;
   border-radius: 4px;
   font-weight: 600;
@@ -76,7 +77,7 @@
 }
 
 .header-anchor-wrapper a {
-  font-size: 1rem; 
+  /* font-size: 1rem;  */
   font-family: 'Inter', 'Segoe UI', sans-serif;  
   font-weight: 600;
   color: #333; 
@@ -89,4 +90,54 @@
   color: #f15b6e;
   box-shadow: 0 0 10px rgba(241, 91, 110, 0.3);
   background-color: rgba(241, 91, 110, 0.1); 
+}
+
+.header-hamburger-menu {
+  display: none;
+}
+
+
+/* MEDIA QUERY — MOBILE */
+@media (max-width: 768px) {
+
+  .header-container{
+    flex-wrap: nowrap;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+  }
+  .header-hamburger-menu {
+    display: inline;
+  }
+
+  .header-anchor-wrapper{
+    display: none;
+  }
+
+  .header-button-wrapper {
+    display: none;
+  }
+
+  .header-logo{
+    width: 12rem;
+    
+  }
+
+  .sticky {
+    max-width: 75%;
+    padding: 0.75rem 1rem; 
+
+  }
+
+  .header-hamburger-menu {
+    /* display: none; */
+    /* font-size: 2rem; */
+    background-color: #f15b6e;
+    color: white;
+    font-size: 1rem;
+    width: 2rem;
+    cursor: pointer;
+    border:none;
+    padding: 0.75rem 1rem; 
+  }
+  
 }

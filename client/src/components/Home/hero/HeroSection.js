@@ -1,3 +1,5 @@
+import "./HeroSection.css"
+
 const HeroSection = () => {
 return (
     <div className='block1'>

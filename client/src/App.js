@@ -4,6 +4,7 @@ import Home from './pages/home/Home';
 import LandlordDashboard from './pages/landlord/LandloardDashboard';
 import Login from './pages/login/Login';
 import TenantDashboard from './pages/tenant/TenantDashboard';
+import Pricing from './pages/home/Pricing';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="LandlordDashboard" element={<LandlordDashboard />} />
         <Route path="Login" element={<Login />} />
         <Route path="TenantDashboard" element={<TenantDashboard />} />
