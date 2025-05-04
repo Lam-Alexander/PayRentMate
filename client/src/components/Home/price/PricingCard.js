@@ -1,6 +1,7 @@
 import './PricingCard.css';
 
 const PricingCard = ({ title, pricing, features }) => {
+  
   const getTitleClass = (title) => {
     switch (title) {
       case 'LITE':
@@ -38,15 +39,14 @@ const PricingCard = ({ title, pricing, features }) => {
         <button className="pricing-get-started-button">Subscribe Now</button>
       </div>
       <ul>
-        {Object.entries(features).map(([feature, value], idx) => (
-          <li key={idx}>
-            <span className="feature-icon">
-              {(value === true || typeof value === 'string') && <CheckIcon />}
-              {value === false && <CrossIcon />}
-            </span>
-            {typeof value === 'string' ? value : ''} {feature}
-          </li>
-        ))}
+        {features.map((featureList, idx) => 
+        <li key={idx}>
+          <span className="feature-icon">
+            {featureList.value ? <CheckIcon/> : <CrossIcon/>}
+          </span>
+          {featureList.label}
+        </li>
+        )}
       </ul>
     </div>
   );
