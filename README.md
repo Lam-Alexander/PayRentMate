@@ -1,9 +1,5 @@
 # PayRentMate
 
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -12,9 +8,6 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
@@ -42,7 +35,6 @@ This project follows a standardized commit message format.
 
 ### Example Commit Messages
 
-
 feat: add responsive hamburger menu for mobile
 fix: correct scroll behavior on navigation links
 style: fix CSS spacing in header component
@@ -54,12 +46,14 @@ To maintain code clarity and help future contributors understand the functionali
 ### Comment Format
 
 Each component should have a **header comment** at the top, describing:
+
 - What the component does
 - Key elements or features inside the component
 - Any styling or layout details that are important
 
 **Example:**
 
+```bash
 /**
  * HeroSection component
  *
@@ -72,6 +66,7 @@ Each component should have a **header comment** at the top, describing:
  *
  * The section is styled to overlay the text and button on top of the image
  */
+```
 
 ### Why This Matters
 
@@ -80,4 +75,3 @@ Each component should have a **header comment** at the top, describing:
 - **Collaboration:** When multiple people are working on the project, consistent comments ensure that everyone is on the same page.
 
 Please ensure that all new components follow this commenting style.
-
