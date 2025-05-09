@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/home/Home';
-import LandlordDashboard from './pages/landlord/LandloardDashboard';
-import Login from './pages/login/Login';
-import TenantDashboard from './pages/tenant/TenantDashboard';
-import Pricing from './pages/home/Pricing';
-
+import Home from "./pages/home/Home";
+import LandlordDashboard from "./pages/landlord/LandloardDashboard";
+import Login from "./pages/login/Login";
+import TenantDashboard from "./pages/tenant/TenantDashboard";
+import Pricing from "./pages/home/Pricing";
 
 function App() {
   return (

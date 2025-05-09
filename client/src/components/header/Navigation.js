@@ -1,6 +1,8 @@
+import "./Navigation.css"
+
 const Navigation = () => {
     return (
-        <div className="header-anchor-wrapper">
+        <div className="navigation-container">
             <a href="/">Home</a>
             <a href="pricing">Pricing</a>
             <a href="#FAQS">FAQS</a>

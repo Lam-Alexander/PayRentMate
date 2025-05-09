@@ -1,63 +1,78 @@
 import PricingCard from "./PricingCard";
+/**
+ * PricingSection Component
+ *
+ * Renders a section that displays available pricing plans use the PricingCard Component.
+ * Each plan includes a title, price and list of features. Data is stored locally in an array.
+ *
+ * This section is intended for users to compare and select the appropriate subscription tier.
+ *
+ */
 
 const PricingSection = () => {
-    const plans = [
+  // Defines available pricing plan with associated features
+  const plans = [
+    {
+      title: "FREE",
+      pricing: "0 CAD/month",
+      features: [
+        { label: "Complimentary Tenant Portal Access", value: true },
+        { label: "View Lease Details", value: true },
+        { label: "Manage Maintenance Requests", value: true },
+        { label: "Automated Rent Collection", value: false },
+        { label: "Access Monthly Statements", value: false },
+      ],
+      Highlight: false,
+    },
+    {
+      title: "LITE",
+      pricing: "20 CAD/month",
+      features: [
+        { label: "Complimentary Tenant Portal Access", value: true },
+        { label: "View Lease Details", value: true },
+        { label: "Manage Maintenance Requests", value: true },
         {
-          title: "FREE",
-          pricing: "0 CAD/month",
-          features: [
-            {label: "Free access for tenant", value: true},
-            {label: "View lease details", value: true},
-            {label: "Manage maintenance requests", value: true},
-            {label: "Automated rent collection", value: false},
-            {label: "Access monthly statements", value: false}
-          ],
-          Highlight: false
+          label: "1 Property / Month with Automated Rent Collection",
+          value: true,
         },
+        { label: "Access Monthly Statements", value: true },
+      ],
+      Highlight: false,
+    },
+    {
+      title: "PRO",
+      pricing: "40 CAD/month",
+      features: [
+        { label: "Complimentary Tenant Portal Access", value: true },
+        { label: "View Lease Details", value: true },
+        { label: "Manage Maintenance Requests", value: true },
         {
-          title: "LITE",
-          pricing: "20 CAD/month",
-          features: [
-            {label: "Free access for tenant", value: true},
-            {label: "View lease details", value: true},
-            {label: "Manage maintenance requests", value: true},
-            {label: "1 property / month with Automated rent collection", value: true},
-            {label: "Access monthly statements", value: true}
-          ],
-          Highlight: false
+          label: "Up to 3 Properties / Month with Automated Rent Collection",
+          value: true,
         },
-        {
-          title: "PRO",
-          pricing: "40 CAD/month",
-          features: [
-            {label: "Free access for tenant", value: true},
-            {label: "View lease details", value: true},
-            {label: "Manage maintenance requests", value: true},
-            {label: "Up to 3 properties / month with Automated rent collection", value: true},
-            {label: "Access monthly statements", value: true}
-          ],
-          Highlight: false
-        }
-      ];
+        { label: "Access Monthly Statements", value: true },
+      ],
+      Highlight: false,
+    },
+  ];
 
-      return (
-      
-<div className="block2">
-  <div className="pricing-header">
-    <h1 className="pricing-page-title">Choose a pricing plan</h1>
-    <p>Meet PayRentMate – designed to make renting easier for everyone.</p>
-  </div>
-  {plans.map((plan, idx) => (
-    <PricingCard 
-      key={idx}
-      title={plan.title}
-      pricing={plan.pricing}
-      features={plan.features}
-      />
-  ))}
-</div>
+  return (
+    <div className="pricing-page-section">
+      <div className="pricing-page-header">
+        <h1 className="pricing-page-title">Choose a pricing plan</h1>
+        <p>Meet PayRentMate – designed to make renting easier for everyone.</p>
+      </div>
 
-        
-      );
-}
-export default PricingSection
+      {/* Render each plan using the PricingCard component */}
+      {plans.map((plan, idx) => (
+        <PricingCard
+          key={idx}
+          title={plan.title}
+          pricing={plan.pricing}
+          features={plan.features}
+        />
+      ))}
+    </div>
+  );
+};
+export default PricingSection;

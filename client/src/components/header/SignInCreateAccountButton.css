@@ -1,0 +1,34 @@
+.SignInCreateAccountButton-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-create-account-button {
+  border: 0;
+  color: white;
+  background-color: #f15b6e;
+  font-size: 18px;
+}
+
+.header-signin-button {
+  color: #f15b6e;
+  background-color: #ffffff;
+  border: 1px solid #f15b6e;
+  font-size: 18px;
+
+}
+
+.header-signin-button:hover {
+  color: white;
+  box-shadow: 0 0 20px #e4717d;
+  background-color: #f15b6e;
+}
+
+.header-signin-button, .header-create-account-button {
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 0.5vh;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}

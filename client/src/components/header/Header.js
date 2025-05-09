@@ -1,24 +1,23 @@
 import "./Header.css";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
-import Button from "./Button";
+import SignInCreateAccountButton from "./SignInCreateAccountButton";
 import HamburgerMenu from "./HamburgerMenu";
-import { useState } from "react"
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false); 
-    return (
-        <header>
-            
-            <div className="sticky">    
-                <div className="header-container"> 
-                    <Logo/>
-                    <Navigation/>
-                    <Button/>
-                    <HamburgerMenu/> 
-                </div>
-            </div>
-        </header>
-    )
+  return (
+    <header>
+      <div className="header-container">
+        <Logo />
+        <div className="header-navigation-container header-navigation-container-desktop-only-view">
+          <Navigation />
+        </div>
+        <div className="header-signincreateaccountbutton-container header-signincreateaccountbutton-container-desktop-only-view">
+          <SignInCreateAccountButton />
+        </div>
+        <HamburgerMenu />
+      </div>
+    </header>
+  );
 };
 export default Header;
