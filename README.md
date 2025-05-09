@@ -42,7 +42,7 @@ This project follows a standardized commit message format.
 
 ### Example Commit Messages
 
-```bash
+
 feat: add responsive hamburger menu for mobile
 fix: correct scroll behavior on navigation links
 style: fix CSS spacing in header component
@@ -80,4 +80,4 @@ Each component should have a **header comment** at the top, describing:
 - **Collaboration:** When multiple people are working on the project, consistent comments ensure that everyone is on the same page.
 
 Please ensure that all new components follow this commenting style.
-```
+
