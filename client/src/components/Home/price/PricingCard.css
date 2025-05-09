@@ -5,10 +5,15 @@
 .pricing-page-section {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    justify-content: space-evenly;
+    /* gap: 2rem; */
     flex-wrap: wrap;
     margin: 0;
-    padding: 20vh;
+    /* padding: 20vh; */
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 25vh;
+    padding-top: 10vh;
 }
 
 /* .pricing-page-background-colour{
@@ -48,7 +53,7 @@
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     border: 1px solid #e0e0e0;
-    border-radius: 1rem;
+    /* border-radius: 0.5rem; */
     padding: 0rem 1rem 1rem 1rem;
     box-shadow: 5px 5px 5px 1px rgb(128, 127, 127);
     text-align: center;

@@ -21,52 +21,63 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 🧾 Commit Naming Convention
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project follows a standardized commit message format.  
+**Please follow the types below when writing commits:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Allowed Commit Types
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Type       | Description                                       |
+| ---------- | ------------------------------------------------- |
+| `feat`     | A new feature                                     |
+| `fix`      | A bug fix                                         |
+| `style`    | Code formatting only (e.g., spacing, indentation) |
+| `chore`    | Changes to tooling, configs, or dependencies      |
+| `refactor` | Code changes that don't add features or fix bugs  |
+| `docs`     | Documentation-only changes                        |
+| `test`     | Adding or updating tests                          |
+| `perf`     | Performance improvements                          |
+| `ci`       | CI/CD pipeline or automation changes              |
 
-### `npm run eject`
+### Example Commit Messages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+feat: add responsive hamburger menu for mobile
+fix: correct scroll behavior on navigation links
+style: fix CSS spacing in header component
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 Code Commenting Guidelines
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To maintain code clarity and help future contributors understand the functionality, **all components** should be well-commented, explaining their purpose, features, and any important details. This helps anyone new to the project quickly grasp how the code works.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Comment Format
 
-## Learn More
+Each component should have a **header comment** at the top, describing:
+- What the component does
+- Key elements or features inside the component
+- Any styling or layout details that are important
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Example:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+/**
+ * HeroSection component
+ *
+ * This component renders a hero section at the top of the page.
+ * It includes:
+ * - A headline describing the service.
+ * - A short paragraph explaining the key benefits.
+ * - A call-to-action button ("Get Started").
+ * - A background image that complements the theme.
+ *
+ * The section is styled to overlay the text and button on top of the image
+ */
 
-### Code Splitting
+### Why This Matters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Readability:** Clear, descriptive comments make it easier for anyone (including yourself) to jump into the project at any time and understand how a component works.
+- **Maintainability:** As the project grows, well-commented code is easier to modify without breaking functionality.
+- **Collaboration:** When multiple people are working on the project, consistent comments ensure that everyone is on the same page.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please ensure that all new components follow this commenting style.
+```
