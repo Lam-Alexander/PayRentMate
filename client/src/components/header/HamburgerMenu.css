@@ -12,11 +12,6 @@
         border-radius: 5px;
         justify-content: center;
     }
-/* hide button and nav in mobile view */
-    .header-navigation-container-desktop-only-view,
-    .header-signincreateaccountbutton-container-desktop-only-view {
-        display: none;
-    }
 
     /* display button in mobile view */
     .hamburger-menu-open-close-button {

@@ -4,6 +4,23 @@ import Navigation from "./Navigation";
 import SignInCreateAccountButton from "./SignInCreateAccountButton";
 import HamburgerMenu from "./HamburgerMenu";
 
+/**
+ * Header Component
+ * 
+ * This component is the container for the entire header.
+ * This components imports the following:
+ * - Logo.js
+ * - Navigation.js
+ * - SignInCreateAccountButton.js
+ * - HamburgerMenu.js
+ * 
+ * - The indvidual styling for each of the componetns listed are within their own style sheet
+ * (ex: Logo.css, Navigation.css). The styling for the header container and positioning of the * imported componets are within the Header.css. 
+ * 
+ *  Styling reqiured to hide the Navigation and SignInCreateAccountButton for mobile view 
+ *  is located in Header.css
+ */
+
 const Header = () => {
   return (
     <header>
