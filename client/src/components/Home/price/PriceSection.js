@@ -58,10 +58,20 @@ const PricingSection = () => {
 
   return (
     <div className="pricing-page-section">
-      <div className="pricing-page-header">
+      {/* <div className="pricing-page-header">
         <h1 className="pricing-page-title">Choose a pricing plan</h1>
         <p>Meet PayRentMate – designed to make renting easier for everyone.</p>
-      </div>
+      </div> */}
+    
+  <div className="pricing-page-header">
+    <p className="pricing-subheading">Flexible plans for tenants and landlords</p>
+    <h1 className="pricing-page-title">Choose a pricing plan</h1>
+    <p className="pricing-page-description">
+      Meet PayRentMate – designed to make renting easier for everyone.
+    </p>
+  </div>
+
+
 
       {/* Render each plan using the PricingCard component */}
       {plans.map((plan, idx) => (

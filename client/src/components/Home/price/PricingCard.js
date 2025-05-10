@@ -41,7 +41,7 @@ const PricingCard = ({ title, pricing, features }) => {
 
   return (
     <div className="pricing-card">
-      <h2 className={getTitleClass(title)}>{title}</h2>
+      <h2 className={getTitleClass(title)} id="#pricing">{title}</h2>
       <p className="price">
         <span className="currency-symbol">$</span>
 

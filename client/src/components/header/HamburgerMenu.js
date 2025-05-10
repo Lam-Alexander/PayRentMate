@@ -21,6 +21,7 @@ import "./HamburgerMenu.css";
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   return (
     <>
       <button
@@ -31,10 +32,10 @@ const HamburgerMenu = () => {
       </button>
       {isOpen ? (
         <div className="hamburger-menu-container">
-          <a href="#Home" className="hamburger-menu-anchor-tag">
+          <a href="/" className="hamburger-menu-anchor-tag">
             <div className="hamburger-menu-anchor-container">Home</div>
           </a>
-          <a href="#Prcing" className="hamburger-menu-anchor-tag">
+          <a href="#pricing" className="hamburger-menu-anchor-tag" onClick={()=> setIsOpen((prev) => !prev)}>
             <div className="hamburger-menu-anchor-container">Pricing</div>
           </a>
           <a href="#Faqs" className="hamburger-menu-anchor-tag">

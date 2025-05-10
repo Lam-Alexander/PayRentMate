@@ -15,7 +15,9 @@ const Home = () => {
     <Layout>
       <main>
         <HeroSection />
-        <PricingSection />
+        <section id="pricing">
+          <PricingSection />
+        </section>
       </main>
     </Layout>
   );
