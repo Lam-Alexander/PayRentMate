@@ -1,3 +1,7 @@
+/* -------------------------------------
+   SIGN IN / CREATE ACCOUNT BASE STYLING
+----------------------------------------*/
+
 .SignInCreateAccountButton-container {
   display: flex;
   gap: 1rem;

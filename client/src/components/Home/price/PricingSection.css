@@ -1,0 +1,48 @@
+/* -------------------------------
+   PRICE PAGE BASE LAYOUT
+--------------------------------*/
+
+.pricing-page-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: rgb(247 247 248);
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 25vh;
+    padding-top: 10vh;
+}
+/* -------------------------------
+   HEADER BASE STYLING
+--------------------------------*/
+
+.pricing-page-header {
+    width: 100%;
+    text-align: center;
+}
+
+.pricing-subheading {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+
+.pricing-page-header h1 {
+    font-family: Montserrat, Helvetica, Arial;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #424141;
+}
+
+.pricing-page-header p {
+    font-size: 1.25rem;
+    color: #606060;
+    font-family: Montserrat, Helvetica, Arial;
+}

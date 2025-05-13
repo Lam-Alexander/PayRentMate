@@ -1,11 +1,15 @@
-/* DESKTOP VEIW ONLY */
+/* -------------------------------
+   DESKTOP VIEW 
+--------------------------------*/
 
 /* hide button in desktop view */
 .hamburger-menu-open-close-button {
     display: none;
 }
 
-/* MOBILE VIEW ONLY */
+/* -------------------------------
+   MEDIA QUERIES - MOBILE VIEW
+--------------------------------*/
 @media (max-width: 480px) {
 
     .header-container {

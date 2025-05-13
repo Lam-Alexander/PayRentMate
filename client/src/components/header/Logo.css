@@ -2,7 +2,9 @@
   width: 15rem;
 }
 
-/* MEDIA QUERY — MOBILE */
+/* -------------------------------
+   MEDIA QUERIES - MOBILE
+--------------------------------*/
 @media (max-width: 480px) {
   .header-logo {
     width: 13rem;

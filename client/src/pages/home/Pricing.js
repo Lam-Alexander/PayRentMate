@@ -1,4 +1,4 @@
-import PricingSection from "../../components/Home/price/PriceSection";
+import PricingSection from "../../components/Home/price/PricingSection";
 import Layout from "../../components/layout/Layout";
 /**
  * Pricing Page
