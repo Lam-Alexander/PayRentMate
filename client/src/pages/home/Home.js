@@ -1,7 +1,6 @@
-import "./Home.css";
 import Layout from "../../components/layout/Layout";
-import HeroSection from "../../components/Home/hero/HeroSection";
-import PricingSection from "../../components/Home/price/PricingSection";
+import HeroSection from "../../components/hero/HeroSection";
+import PricingSection from "../../components/price/PricingSection";
 
 /**
  * Home Page Component
