@@ -8,12 +8,13 @@
     gap: 2rem;
     flex-wrap: wrap;
     margin: 0;
-    background-color: rgb(247 247 248);
+    background-color: whitesmoke;
     padding-left: 10vh;
     padding-right: 10vh;
     padding-bottom: 25vh;
     padding-top: 10vh;
 }
+
 /* -------------------------------
    HEADER BASE STYLING
 --------------------------------*/
@@ -37,6 +38,7 @@
     font-family: Montserrat, Helvetica, Arial;
     font-size: 3rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     font-weight: 600;
     color: #424141;
 }

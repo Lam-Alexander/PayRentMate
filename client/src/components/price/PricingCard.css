@@ -3,12 +3,12 @@
 --------------------------------*/
 
 .pricing-card {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #ffffff99;
     backdrop-filter: blur(10px);
     border: 1px solid #e0e0e0;
     /* border-radius: 0.5rem; */
     padding: 0rem 1rem 1rem 1rem;
-    box-shadow: 5px 5px 5px 1px rgb(128, 127, 127);
+    box-shadow: 5px 5px 5px 1px #e1e1e1;
     text-align: center;
     width: 100%;
     max-width: 300px;
@@ -19,6 +19,7 @@
     min-height: 650px;
     margin-top: 1rem;
     margin-right: 1rem;
+    border-radius: 10px;
 }
 
 .pricing-card:hover {

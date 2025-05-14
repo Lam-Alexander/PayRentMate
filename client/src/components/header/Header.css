@@ -42,7 +42,6 @@
 
   }
 
-
   .header-container {
     max-width: 100%;
     padding: 0.75rem 1rem;
@@ -51,7 +50,7 @@
   /* hide button and nav in mobile view */
   .header-navigation-container-desktop-only-view,
   .header-signincreateaccountbutton-container-desktop-only-view {
-      display: none;
+    display: none;
   }
 
 
